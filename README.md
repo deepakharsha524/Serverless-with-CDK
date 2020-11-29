@@ -1,6 +1,22 @@
 # Serverless_with_CDK
 Serverless with lambda , api gateway and dynamo db
-#AWS CDK
+
+# AWS CDK
+# Welcome to your CDK TypeScript project!
+
+This is a blank project for TypeScript development with CDK.
+
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
+
+## Useful commands
+
+ * `npm run build`   compile typescript to js
+ * `npm run watch`   watch for changes and compile
+ * `npm run test`    perform the jest unit tests
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk synth`       emits the synthesized CloudFormation template
+
 
 # Install NPM : https://nodejs.org/en/ 14.15.1
 
