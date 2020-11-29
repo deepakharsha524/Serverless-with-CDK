@@ -24,10 +24,11 @@ sudo npm i -g aws-cdk
 
 
 # Initialize a project:
+```
 $ mkdir test
 $ cd test
 $ cdk init app --language=typescript
-
+```
 
 # iTerm2 is an open source replacement for Apple's Terminal. It's highly customizable and comes with a lot of useful features.
 
