@@ -37,7 +37,7 @@ brew cask install iterm2
 
 # Default lambda js code
 
-
+```
 exports.handler = async (event) => {
     // TODO implement
     const response = {
@@ -46,7 +46,7 @@ exports.handler = async (event) => {
     };
     return response;
 };
-
+```
 
 
 # Install CDK
