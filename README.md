@@ -2,9 +2,9 @@
 Serverless with lambda , api gateway and dynamo db
 #AWS CDK
 
-#Install NPM : https://nodejs.org/en/ 14.15.1
+# Install NPM : https://nodejs.org/en/ 14.15.1
 
-#Install Brew
+# Install Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew update
@@ -18,24 +18,24 @@ brew install node
 
 
 
-#Install CDK
+# Install CDK
 
 sudo npm i -g aws-cdk
 
 
-#Initialize a project:
+# Initialize a project:
 $ mkdir test
 $ cd test
 $ cdk init app --language=typescript
 
 
-#iTerm2 is an open source replacement for Apple's Terminal. It's highly customizable and comes with a lot of useful features.
+# iTerm2 is an open source replacement for Apple's Terminal. It's highly customizable and comes with a lot of useful features.
 
 
 brew cask install iterm2
 
 
-#Default lambda js code
+# Default lambda js code
 
 
 exports.handler = async (event) => {
@@ -49,18 +49,18 @@ exports.handler = async (event) => {
 
 
 
-#Install CDK
+# Install CDK
 
 npm i -g aws-cdk
 
 
-#Initialize a project:
+# Initialize a project:
 $ mkdir test
 $ cd test
 $ cdk init app --language=typescript
 
 
-#Create a lamba function
+# Create a lamba function
 Import lamba module from cdk
 
 npm install  @aws-cdk/aws-lambda
