@@ -1,0 +1,1147 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "ServerlessWithCdkStack1": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/us-west-2",
+      "properties": {
+        "templateFile": "ServerlessWithCdkStack1.template.json"
+      },
+      "metadata": {
+        "/ServerlessWithCdkStack1": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2",
+              "id": "92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2",
+              "packaging": "zip",
+              "sourceHash": "92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2",
+              "s3BucketParameter": "AssetParameters92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2S3Bucket296F61E0",
+              "s3KeyParameter": "AssetParameters92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2S3VersionKey23933863",
+              "artifactHashParameter": "AssetParameters92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2ArtifactHash4B5C03A9"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:160:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:71:19)",
+              "ServerlessWithCdkStack1.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack.ts:651:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:75:25)",
+              "new Asset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:559:29)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:22:26)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/BooksTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "BooksTable9DF4AE31"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "new Table (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1085:38)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:12:19)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/BooksTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BooksTable9DF4AE31",
+            "trace": [
+              "new Table (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1058:18)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:12:19)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/BooksnewTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "BooksnewTable4AEF819E"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "new Table (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1085:38)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:16:23)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/BooksnewTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BooksnewTable4AEF819E",
+            "trace": [
+              "new Table (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1058:18)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:16:23)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/HelloHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandlerServiceRole11EF7C63",
+            "trace": [
+              "new Role (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:539:31)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:22:26)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/HelloHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandler2E4FBA4D",
+            "trace": [
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:593:35)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:22:26)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/AssetParameters/92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2S3Bucket296F61E0",
+            "trace": [
+              "new FileAssetParameters (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:147:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:71:19)",
+              "ServerlessWithCdkStack1.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack.ts:651:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:75:25)",
+              "new Asset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:559:29)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:22:26)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/AssetParameters/92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2S3VersionKey23933863",
+            "trace": [
+              "new FileAssetParameters (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:147:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:71:19)",
+              "ServerlessWithCdkStack1.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack.ts:651:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:75:25)",
+              "new Asset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:559:29)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:22:26)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/AssetParameters/92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters92a66f1fc95e0c6d08d204f23fa841de700946a6cd1df477860a0b3ede3f4bc2ArtifactHash4B5C03A9",
+            "trace": [
+              "new FileAssetParameters (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:147:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:71:19)",
+              "ServerlessWithCdkStack1.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack.ts:651:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:75:25)",
+              "new Asset (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:559:29)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:22:26)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/BooksHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BooksHandlerServiceRole5B6A8847",
+            "trace": [
+              "new Role (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:539:31)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:29:24)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/BooksHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BooksHandler3EB83358",
+            "trace": [
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:593:35)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:29:24)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/WriteHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WriteHandlerServiceRole53B5A6A6",
+            "trace": [
+              "new Role (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:539:31)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:35:22)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/WriteHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WriteHandlerServiceRoleDefaultPolicy7E3B8B6C",
+            "trace": [
+              "new Policy (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Table.combinedGrant (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:881:29)",
+              "Table.grantReadWriteData (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:665:17)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:47:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/WriteHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WriteHandler5B025288",
+            "trace": [
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:593:35)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:35:22)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/HardWriteHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HardWriteHandlerServiceRoleB60F037C",
+            "trace": [
+              "new Role (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:539:31)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:40:26)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/HardWriteHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HardWriteHandlerServiceRoleDefaultPolicy516475E3",
+            "trace": [
+              "new Policy (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Table.combinedGrant (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:881:29)",
+              "Table.grantReadWriteData (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:665:17)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:46:10)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/HardWriteHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HardWriteHandler55554B3D",
+            "trace": [
+              "new Function (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function.ts:593:35)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:40:26)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigateway715DB67F",
+            "trace": [
+              "new RestApi (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:683:22)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:50:17)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayCloudWatchRoleB23082DB",
+            "trace": [
+              "new Role (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "RestApi.configureCloudWatchRole (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:490:18)",
+              "new RestApi (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:700:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:50:17)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayAccount4700FD79",
+            "trace": [
+              "RestApi.configureCloudWatchRole (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:495:22)",
+              "new RestApi (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:700:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:50:17)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayDeploymentCC10B80Edfdef8fc7ebd3c7f07d5fb5d46147c30",
+            "trace": [
+              "new Deployment (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:71:21)",
+              "RestApi.configureDeployment (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:506:32)",
+              "new RestApi (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:703:10)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:50:17)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayDeploymentStageprodE9DCA402",
+            "trace": [
+              "new Stage (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:240:22)",
+              "RestApi.configureDeployment (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:516:30)",
+              "new RestApi (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:703:10)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:50:17)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayEndpoint7385044F",
+            "trace": [
+              "RestApi.configureDeployment (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:521:7)",
+              "new RestApi (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:703:10)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:50:17)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayANYFB32EC47",
+            "trace": [
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
+              "RootResource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:51:17)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/hello/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayhello1FAC2281",
+            "trace": [
+              "new Resource (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:402:22)",
+              "RootResource.addResource (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:183:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:58:32)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/hello/GET/ApiPermission.ServerlessWithCdkStack1myapigateway198B4D84.GET..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayhelloGETApiPermissionServerlessWithCdkStack1myapigateway198B4D84GEThelloF0722A95",
+            "trace": [
+              "Function.addPermission (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:234:5)",
+              "LambdaIntegration.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:63:18)",
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:59:15)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/hello/GET/ApiPermission.Test.ServerlessWithCdkStack1myapigateway198B4D84.GET..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayhelloGETApiPermissionTestServerlessWithCdkStack1myapigateway198B4D84GEThello9D8B06B8",
+            "trace": [
+              "Function.addPermission (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:234:5)",
+              "LambdaIntegration.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:71:20)",
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:59:15)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/hello/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayhelloGETCD9DD78E",
+            "trace": [
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:59:15)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/hello/POST/ApiPermission.ServerlessWithCdkStack1myapigateway198B4D84.POST..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayhelloPOSTApiPermissionServerlessWithCdkStack1myapigateway198B4D84POSThello97FADB2D",
+            "trace": [
+              "Function.addPermission (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:234:5)",
+              "LambdaIntegration.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:63:18)",
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:60:15)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/hello/POST/ApiPermission.Test.ServerlessWithCdkStack1myapigateway198B4D84.POST..hello": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayhelloPOSTApiPermissionTestServerlessWithCdkStack1myapigateway198B4D84POSThello9A1AF0CE",
+            "trace": [
+              "Function.addPermission (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:234:5)",
+              "LambdaIntegration.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:71:20)",
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:60:15)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/hello/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewayhelloPOST9D8AFEE7",
+            "trace": [
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:60:15)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/books/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewaybooks65AD86A4",
+            "trace": [
+              "new Resource (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:402:22)",
+              "RootResource.addResource (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:183:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:62:30)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/books/GET/ApiPermission.ServerlessWithCdkStack1myapigateway198B4D84.GET..books": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewaybooksGETApiPermissionServerlessWithCdkStack1myapigateway198B4D84GETbooksFD986CC1",
+            "trace": [
+              "Function.addPermission (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:234:5)",
+              "LambdaIntegration.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:63:18)",
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:63:12)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/books/GET/ApiPermission.Test.ServerlessWithCdkStack1myapigateway198B4D84.GET..books": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewaybooksGETApiPermissionTestServerlessWithCdkStack1myapigateway198B4D84GETbooksB3E1CE75",
+            "trace": [
+              "Function.addPermission (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:234:5)",
+              "LambdaIntegration.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:71:20)",
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:63:12)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/books/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewaybooksGETAB64D9E5",
+            "trace": [
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:63:12)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/books/POST/ApiPermission.ServerlessWithCdkStack1myapigateway198B4D84.POST..books": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewaybooksPOSTApiPermissionServerlessWithCdkStack1myapigateway198B4D84POSTbooksD893DFF0",
+            "trace": [
+              "Function.addPermission (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:234:5)",
+              "LambdaIntegration.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:63:18)",
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:64:12)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/books/POST/ApiPermission.Test.ServerlessWithCdkStack1myapigateway198B4D84.POST..books": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewaybooksPOSTApiPermissionTestServerlessWithCdkStack1myapigateway198B4D84POSTbooksAA264391",
+            "trace": [
+              "Function.addPermission (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:234:5)",
+              "LambdaIntegration.bind (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:71:20)",
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:64:12)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/myapigateway/Default/books/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myapigatewaybooksPOSTA0320B86",
+            "trace": [
+              "new Method (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
+              "Resource.addMethod (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "new ServerlessWithCdkStack1 (/Users/sdeepak/serverless-with-cdk/lib/serverless-with-cdk-stack1.ts:64:12)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/bin/serverless-with-cdk.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/ServerlessWithCdkStack1/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/sdeepak/serverless-with-cdk/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (/Users/sdeepak/serverless-with-cdk/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

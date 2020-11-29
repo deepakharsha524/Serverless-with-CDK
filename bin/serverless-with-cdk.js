@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("@aws-cdk/core");
+const serverless_with_cdk_stack1_1 = require("../lib/serverless-with-cdk-stack1");
+const app = new cdk.App();
+//new ServerlessWithCdkStack(app, 'ServerlessWithCdkStack');
+//passing eniroment variables like region.
+new serverless_with_cdk_stack1_1.ServerlessWithCdkStack1(app, 'ServerlessWithCdkStack1', {
+    env: {
+        region: 'us-west-2'
+    }
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VydmVybGVzcy13aXRoLWNkay5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInNlcnZlcmxlc3Mtd2l0aC1jZGsudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQ0EsdUNBQXFDO0FBQ3JDLHFDQUFxQztBQUNyQyxrRkFBNEU7QUFFNUUsTUFBTSxHQUFHLEdBQUcsSUFBSSxHQUFHLENBQUMsR0FBRyxFQUFFLENBQUM7QUFDMUIsNERBQTREO0FBQzVELDBDQUEwQztBQUMxQyxJQUFJLG9EQUF1QixDQUFDLEdBQUcsRUFBRSx5QkFBeUIsRUFBQztJQUN2RCxHQUFHLEVBQUU7UUFDRCxNQUFNLEVBQUUsV0FBVztLQUN0QjtDQUNKLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIiMhL3Vzci9iaW4vZW52IG5vZGVcbmltcG9ydCAnc291cmNlLW1hcC1zdXBwb3J0L3JlZ2lzdGVyJztcbmltcG9ydCAqIGFzIGNkayBmcm9tICdAYXdzLWNkay9jb3JlJztcbmltcG9ydCB7IFNlcnZlcmxlc3NXaXRoQ2RrU3RhY2sxIH0gZnJvbSAnLi4vbGliL3NlcnZlcmxlc3Mtd2l0aC1jZGstc3RhY2sxJztcblxuY29uc3QgYXBwID0gbmV3IGNkay5BcHAoKTtcbi8vbmV3IFNlcnZlcmxlc3NXaXRoQ2RrU3RhY2soYXBwLCAnU2VydmVybGVzc1dpdGhDZGtTdGFjaycpO1xuLy9wYXNzaW5nIGVuaXJvbWVudCB2YXJpYWJsZXMgbGlrZSByZWdpb24uXG5uZXcgU2VydmVybGVzc1dpdGhDZGtTdGFjazEoYXBwLCAnU2VydmVybGVzc1dpdGhDZGtTdGFjazEnLHtcbiAgICBlbnY6IHtcbiAgICAgICAgcmVnaW9uOiAndXMtd2VzdC0yJ1xuICAgIH1cbn0pOyJdfQ==

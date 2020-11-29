@@ -1,0 +1,971 @@
+{
+  "Resources": {
+    "BooksTable9DF4AE31": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "KeySchema": [
+          {
+            "AttributeName": "id",
+            "KeyType": "HASH"
+          }
+        ],
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "id",
+            "AttributeType": "S"
+          }
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5
+        },
+        "TableName": "booksInformartion"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/BooksTable/Resource"
+      }
+    },
+    "HelloHandlerServiceRole11EF7C63": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/HelloHandler/ServiceRole/Resource"
+      }
+    },
+    "HelloHandler2E4FBA4D": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3Bucket09937ADB"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3VersionKey55E17108"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3VersionKey55E17108"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Handler": "hello.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "HelloHandlerServiceRole11EF7C63",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs10.x"
+      },
+      "DependsOn": [
+        "HelloHandlerServiceRole11EF7C63"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/HelloHandler/Resource",
+        "aws:asset:path": "asset.f3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043",
+        "aws:asset:property": "Code"
+      }
+    },
+    "BooksHandlerServiceRole5B6A8847": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/BooksHandler/ServiceRole/Resource"
+      }
+    },
+    "BooksHandler3EB83358": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3Bucket09937ADB"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3VersionKey55E17108"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3VersionKey55E17108"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Handler": "books.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "BooksHandlerServiceRole5B6A8847",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs10.x"
+      },
+      "DependsOn": [
+        "BooksHandlerServiceRole5B6A8847"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/BooksHandler/Resource",
+        "aws:asset:path": "asset.f3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043",
+        "aws:asset:property": "Code"
+      }
+    },
+    "WriteHandlerServiceRole53B5A6A6": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/WriteHandler/ServiceRole/Resource"
+      }
+    },
+    "WriteHandler5B025288": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3Bucket09937ADB"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3VersionKey55E17108"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3VersionKey55E17108"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Handler": "writetodb.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "WriteHandlerServiceRole53B5A6A6",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs10.x"
+      },
+      "DependsOn": [
+        "WriteHandlerServiceRole53B5A6A6"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/WriteHandler/Resource",
+        "aws:asset:path": "asset.f3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043",
+        "aws:asset:property": "Code"
+      }
+    },
+    "myapigateway715DB67F": {
+      "Type": "AWS::ApiGateway::RestApi",
+      "Properties": {
+        "Name": "myapigateway"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Resource"
+      }
+    },
+    "myapigatewayCloudWatchRoleB23082DB": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "apigateway.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/CloudWatchRole/Resource"
+      }
+    },
+    "myapigatewayAccount4700FD79": {
+      "Type": "AWS::ApiGateway::Account",
+      "Properties": {
+        "CloudWatchRoleArn": {
+          "Fn::GetAtt": [
+            "myapigatewayCloudWatchRoleB23082DB",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "myapigateway715DB67F"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Account"
+      }
+    },
+    "myapigatewayDeploymentCC10B80Eb4097e7c5717849ffcf4c8d98c87334b": {
+      "Type": "AWS::ApiGateway::Deployment",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        },
+        "Description": "Automatically created by the RestApi construct"
+      },
+      "DependsOn": [
+        "myapigatewayANYFB32EC47",
+        "myapigatewaybooksGETAB64D9E5",
+        "myapigatewaybooksPOSTA0320B86",
+        "myapigatewaybooks65AD86A4",
+        "myapigatewayhelloGETCD9DD78E",
+        "myapigatewayhelloPOST9D8AFEE7",
+        "myapigatewayhello1FAC2281"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Deployment/Resource"
+      }
+    },
+    "myapigatewayDeploymentStageprodE9DCA402": {
+      "Type": "AWS::ApiGateway::Stage",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        },
+        "DeploymentId": {
+          "Ref": "myapigatewayDeploymentCC10B80Eb4097e7c5717849ffcf4c8d98c87334b"
+        },
+        "StageName": "prod"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/DeploymentStage.prod/Resource"
+      }
+    },
+    "myapigatewayANYFB32EC47": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "ANY",
+        "ResourceId": {
+          "Fn::GetAtt": [
+            "myapigateway715DB67F",
+            "RootResourceId"
+          ]
+        },
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "Type": "MOCK"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/ANY/Resource"
+      }
+    },
+    "myapigatewayhello1FAC2281": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "myapigateway715DB67F",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "hello",
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/hello/Resource"
+      }
+    },
+    "myapigatewayhelloGETApiPermissionServerlessWithCdkStackmyapigateway8C27E211GEThello33E3EFBC": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "HelloHandler2E4FBA4D",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-west-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "myapigateway715DB67F"
+              },
+              "/",
+              {
+                "Ref": "myapigatewayDeploymentStageprodE9DCA402"
+              },
+              "/GET/hello"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/hello/GET/ApiPermission.ServerlessWithCdkStackmyapigateway8C27E211.GET..hello"
+      }
+    },
+    "myapigatewayhelloGETApiPermissionTestServerlessWithCdkStackmyapigateway8C27E211GEThelloBE6E272F": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "HelloHandler2E4FBA4D",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-west-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "myapigateway715DB67F"
+              },
+              "/test-invoke-stage/GET/hello"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/hello/GET/ApiPermission.Test.ServerlessWithCdkStackmyapigateway8C27E211.GET..hello"
+      }
+    },
+    "myapigatewayhelloGETCD9DD78E": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "myapigatewayhello1FAC2281"
+        },
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-west-2:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "HelloHandler2E4FBA4D",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/hello/GET/Resource"
+      }
+    },
+    "myapigatewayhelloPOSTApiPermissionServerlessWithCdkStackmyapigateway8C27E211POSThelloB4DC31E7": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "WriteHandler5B025288",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-west-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "myapigateway715DB67F"
+              },
+              "/",
+              {
+                "Ref": "myapigatewayDeploymentStageprodE9DCA402"
+              },
+              "/POST/hello"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/hello/POST/ApiPermission.ServerlessWithCdkStackmyapigateway8C27E211.POST..hello"
+      }
+    },
+    "myapigatewayhelloPOSTApiPermissionTestServerlessWithCdkStackmyapigateway8C27E211POSThello616DDE88": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "WriteHandler5B025288",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-west-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "myapigateway715DB67F"
+              },
+              "/test-invoke-stage/POST/hello"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/hello/POST/ApiPermission.Test.ServerlessWithCdkStackmyapigateway8C27E211.POST..hello"
+      }
+    },
+    "myapigatewayhelloPOST9D8AFEE7": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "ResourceId": {
+          "Ref": "myapigatewayhello1FAC2281"
+        },
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-west-2:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "WriteHandler5B025288",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/hello/POST/Resource"
+      }
+    },
+    "myapigatewaybooks65AD86A4": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "myapigateway715DB67F",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "books",
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/books/Resource"
+      }
+    },
+    "myapigatewaybooksGETApiPermissionServerlessWithCdkStackmyapigateway8C27E211GETbooks9C4E7693": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "BooksHandler3EB83358",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-west-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "myapigateway715DB67F"
+              },
+              "/",
+              {
+                "Ref": "myapigatewayDeploymentStageprodE9DCA402"
+              },
+              "/GET/books"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/books/GET/ApiPermission.ServerlessWithCdkStackmyapigateway8C27E211.GET..books"
+      }
+    },
+    "myapigatewaybooksGETApiPermissionTestServerlessWithCdkStackmyapigateway8C27E211GETbooks47C3AA90": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "BooksHandler3EB83358",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-west-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "myapigateway715DB67F"
+              },
+              "/test-invoke-stage/GET/books"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/books/GET/ApiPermission.Test.ServerlessWithCdkStackmyapigateway8C27E211.GET..books"
+      }
+    },
+    "myapigatewaybooksGETAB64D9E5": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "myapigatewaybooks65AD86A4"
+        },
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-west-2:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "BooksHandler3EB83358",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/books/GET/Resource"
+      }
+    },
+    "myapigatewaybooksPOSTApiPermissionServerlessWithCdkStackmyapigateway8C27E211POSTbooksABB59644": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "WriteHandler5B025288",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-west-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "myapigateway715DB67F"
+              },
+              "/",
+              {
+                "Ref": "myapigatewayDeploymentStageprodE9DCA402"
+              },
+              "/POST/books"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/books/POST/ApiPermission.ServerlessWithCdkStackmyapigateway8C27E211.POST..books"
+      }
+    },
+    "myapigatewaybooksPOSTApiPermissionTestServerlessWithCdkStackmyapigateway8C27E211POSTbooksC152B699": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "WriteHandler5B025288",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:us-west-2:",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "myapigateway715DB67F"
+              },
+              "/test-invoke-stage/POST/books"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/books/POST/ApiPermission.Test.ServerlessWithCdkStackmyapigateway8C27E211.POST..books"
+      }
+    },
+    "myapigatewaybooksPOSTA0320B86": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "ResourceId": {
+          "Ref": "myapigatewaybooks65AD86A4"
+        },
+        "RestApiId": {
+          "Ref": "myapigateway715DB67F"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:us-west-2:lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "WriteHandler5B025288",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/myapigateway/Default/books/POST/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Modules": "aws-cdk=1.75.0,@aws-cdk/assets=1.75.0,@aws-cdk/aws-apigateway=1.75.0,@aws-cdk/aws-applicationautoscaling=1.75.0,@aws-cdk/aws-autoscaling-common=1.75.0,@aws-cdk/aws-cloudwatch=1.75.0,@aws-cdk/aws-codeguruprofiler=1.75.0,@aws-cdk/aws-dynamodb=1.75.0,@aws-cdk/aws-ec2=1.75.0,@aws-cdk/aws-events=1.75.0,@aws-cdk/aws-iam=1.75.0,@aws-cdk/aws-kms=1.75.0,@aws-cdk/aws-lambda=1.75.0,@aws-cdk/aws-logs=1.75.0,@aws-cdk/aws-s3=1.75.0,@aws-cdk/aws-s3-assets=1.75.0,@aws-cdk/aws-sqs=1.75.0,@aws-cdk/aws-ssm=1.75.0,@aws-cdk/cloud-assembly-schema=1.75.0,@aws-cdk/core=1.75.0,@aws-cdk/custom-resources=1.75.0,@aws-cdk/cx-api=1.75.0,@aws-cdk/region-info=1.75.0,jsii-runtime=node.js/v12.19.1"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ServerlessWithCdkStack/CDKMetadata/Default"
+      }
+    }
+  },
+  "Parameters": {
+    "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3Bucket09937ADB": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"f3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043\""
+    },
+    "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043S3VersionKey55E17108": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"f3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043\""
+    },
+    "AssetParametersf3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043ArtifactHash71530446": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"f3b480d59ac929718b7494a984e1f5dafa4b719789a2320a9cf135f0a2b47043\""
+    }
+  },
+  "Outputs": {
+    "myapigatewayEndpoint7385044F": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Ref": "myapigateway715DB67F"
+            },
+            ".execute-api.us-west-2.",
+            {
+              "Ref": "AWS::URLSuffix"
+            },
+            "/",
+            {
+              "Ref": "myapigatewayDeploymentStageprodE9DCA402"
+            },
+            "/"
+          ]
+        ]
+      }
+    }
+  }
+}
